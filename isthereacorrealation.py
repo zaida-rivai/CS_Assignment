@@ -16,10 +16,11 @@ fig, ax = plt.subplots()
 # fig.set_size_inches(3, 1.5)
 
 
+fig, ax = plt.subplots()
 plt.scatter(df.iloc[:,0],df.iloc[:,-1],label="Netherlands")
 # plt.scatter(df.iloc[:,0],df.iloc[:,1])
 plt.xlabel("Year")
 plt.ylabel("Annually beer consumption (x1000 hectoliter)")
 plt.legend()
 plt.show()
-plt.savefig('myfig.jpg')
+fig.savefig('myfig.png',dpi=300)
