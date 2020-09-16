@@ -18,7 +18,7 @@ fig, ax = plt.subplots()
 
 plt.scatter(df.iloc[:,0],df.iloc[:,-1],label="Netherlands")
 # plt.scatter(df.iloc[:,0],df.iloc[:,1])
-plt.xlabel("WO (x1000)")
+plt.xlabel("Year")
 plt.ylabel("Annually beer consumption (x1000 hectoliter)")
 plt.legend()
 plt.show()
